@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif!important;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 1px!important;
+}
+
+.login-logo img {
+  height: 140px;
+  width: auto;
+}
+
+.login-title {
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.login-subtitle {
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  border-top: 20px;
+  margin-bottom: 6px;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: -8px;
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #ffc107;
+}
+
+.form-checkbox label {
+  color: #8b8f95;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.error-message {
+  background-color: rgba(244, 67, 54, 0.1);
+  border: 1px solid #f44336;
+  color: #f44336;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.forgot-password {
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+    font-weight: 600;
+
+}
+
+.forgot-password:hover {
+  color: #ffca28;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 32px 24px;
+  }
+
+  .login-title {
+    font-size: 16px;
+  }
+
+  .login-subtitle {
+    font-size: 20px;
+  }
+}

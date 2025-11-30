@@ -1,0 +1,36 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #002F6C;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #ffca28;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffc107;
+  border: 2px solid #ffc107;
+}
+
+.btn-full {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,118 @@
+/* src/components/layout/Header.css */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  right: 0;
+  height: 70px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  /* Elimina el padding aquí */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px; /* ← Aquí sí va el padding */
+  box-sizing: border-box;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #002F6C;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-action-item {
+  position: relative;
+}
+
+.header-icon-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #4a5568;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.header-icon-btn:hover {
+  background-color: #f7fafc;
+  color: #002F6C;
+}
+
+.header-icon-btn:active {
+  transform: scale(0.95);
+}
+
+/* Badge de notificaciones */
+.notification-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: #f44336;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 5px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Campo de búsqueda */
+.header-search-input {
+  width: 250px;
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.header-search-input:focus {
+  border-color: #002F6C;
+  box-shadow: 0 0 0 3px rgba(0, 47, 108, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    left: 0;
+  }
+
+  .header-content {
+    padding: 0 16px;
+  }
+
+  .header-title {
+    font-size: 20px;
+  }
+
+  .header-search-input {
+    width: 180px;
+  }
+}

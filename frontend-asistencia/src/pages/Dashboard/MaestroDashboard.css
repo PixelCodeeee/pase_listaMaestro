@@ -1,0 +1,111 @@
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 72px;     
+  padding-right: 32px;    
+  max-width: 1400px;
+  margin: 0 auto;         
+}
+
+.stat-card-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card-wrapper:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
+.stat-card-wrapper:hover .stat-card {
+  background-color: #facc69 !important;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.chart-section {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #002F6C;
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.action-btn-primary {
+  background-color: #6B7F95;
+  color: #ffffff;
+}
+
+.action-btn-primary:hover {
+  background-color: #FFB81C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 127, 149, 0.3);
+}
+
+.action-btn-secondary {
+  background-color: #6B7F95;
+  color: #ffffff;
+}
+
+.action-btn-secondary:hover {
+  background-color: #FFB81C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 127, 149, 0.3);
+}
+
+.btn-icon {
+  font-size: 20px !important; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-section {
+    padding: 20px;
+  }
+
+}

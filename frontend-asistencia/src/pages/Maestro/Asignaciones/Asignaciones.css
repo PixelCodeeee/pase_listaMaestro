@@ -1,0 +1,258 @@
+.asignaciones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 72px;
+  padding-right: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ========== TABS DE MATERIAS ========== */
+.materias-tabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.materia-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: #6b7280;
+  border: 2px solid #e5e7eb;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.materia-tab:hover {
+  border-color: #002f6c;
+  color: #002f6c;
+  transform: translateY(-2px);
+}
+
+.materia-tab.active {
+  background-color: #fbbf24;
+  color: #1f2937;
+  border-color: #fbbf24;
+}
+
+.materia-badge {
+  background-color: #e5e7eb;
+  color: #6b7280;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.materia-tab.active .materia-badge {
+  background-color: #1f2937;
+  color: #fbbf24;
+}
+
+/* ========== CONTENIDO ========== */
+.content-section {
+  margin-top: 0;
+}
+
+.materia-title {
+  color: #002f6c;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.materia-subtitle {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* ========== GRID DE GRUPOS ========== */
+.grupos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.grupo-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.grupo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  border-color: #002f6c;
+}
+
+/* ========== HEADER DEL CARD ========== */
+.grupo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.grupo-nombre {
+  color: #002f6c;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.asistencia-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.asistencia-badge.asistencia-alta {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.asistencia-badge.asistencia-media {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.asistencia-badge.asistencia-baja {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* ========== INFO DEL GRUPO ========== */
+.grupo-info {
+  margin-bottom: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-icon {
+  color: #fbbf24;
+  font-size: 20px;
+}
+
+/* ========== ACCIONES ========== */
+.grupo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-btn-qr {
+  background-color: #002f6c;
+  color: #ffffff;
+}
+
+.action-btn-qr:hover {
+  background-color: #001d3d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 47, 108, 0.3);
+}
+
+.action-btn-lista {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.action-btn-lista:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== EMPTY STATE ========== */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.empty-icon {
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.empty-text {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .asignaciones-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .materias-tabs {
+    flex-direction: column;
+  }
+
+  .materia-tab {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .grupos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grupo-actions {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    width: 100%;
+  }
+}

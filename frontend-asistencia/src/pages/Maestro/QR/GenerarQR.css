@@ -1,0 +1,325 @@
+
+.generar-qr-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 72px;
+  padding-right: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ========== CARD FORMULARIO ========== */
+.qr-form-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.form-icon {
+  color: #002f6c;
+}
+
+.form-title {
+  color: #002f6c;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ========== FORMULARIO ========== */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.form-select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form-select:hover:not(:disabled) {
+  border-color: #002f6c;
+  background-color: #ffffff;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #002f6c;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 47, 108, 0.1);
+}
+
+.form-select:disabled {
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-generar {
+  width: 100%;
+  padding: 14px 24px;
+  background-color: #fbbf24;
+  color: #1f2937;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.btn-generar:hover {
+  background-color: #f59e0b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
+/* ========== CARD QR DISPLAY ========== */
+.qr-display-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.qr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.qr-title {
+  color: #002f6c;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.qr-status {
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.qr-status.activo {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.qr-status.expirando {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* ========== DISPLAY DEL QR ========== */
+.qr-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.qr-placeholder {
+  background-color: #f9fafb;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.qr-icon-placeholder {
+  color: #d1d5db;
+}
+
+/* ========== INFO DEL QR ========== */
+.qr-info {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ========== TIMER ========== */
+.qr-timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.timer-label {
+  color: #92400e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.timer-value {
+  color: #92400e;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ========== ACCIONES ========== */
+.qr-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-action {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-regenerar {
+  background-color: #002f6c;
+  color: #ffffff;
+}
+
+.btn-regenerar:hover {
+  background-color: #001d3d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 47, 108, 0.3);
+}
+
+.btn-descargar {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.btn-descargar:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* ========== INSTRUCCIONES ========== */
+.instrucciones-card {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.instrucciones-title {
+  color: #1e40af;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.instrucciones-list {
+  color: #1e3a8a;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.instrucciones-list li {
+  margin-bottom: 8px;
+}
+
+.instrucciones-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .generar-qr-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .qr-actions {
+    flex-direction: column;
+  }
+
+  .btn-action {
+    width: 100%;
+  }
+
+  .qr-placeholder {
+    padding: 20px;
+    min-height: 200px;
+  }
+
+  .qr-icon-placeholder {
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,32 @@
+/* src/components/layout/MainLayout.css */
+
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f7fafc;
+}
+
+.main-content-wrapper {
+  flex: 1;
+  margin-left: 240px; /* Ancho del sidebar */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 32px;
+  margin-top: 70px; /* Altura del header */
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content-wrapper {
+    margin-left: 0;
+  }
+
+  .main-content {
+    padding: 16px;
+  }
+}
